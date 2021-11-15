@@ -15,4 +15,15 @@ Along with the `HttpServer` class, there are HTTP helper methods for working wit
 
 Public global HTTP helper methods include `reply_response()`, `get_query_str()`, `get_query_obj()`, `find_obj()`, `send_404()`, `get_body()`, `set_cookies()`.
 
-A demonstration of `nodehttpserver` is provided in this repository.
+A demonstration of `nodehttpserver` is provided in this repository. Enter the following to start the server:
+
+```
+node startserver.js
+```
+
+In a browser, enter the following address to see the server's response:
+
+```
+localhost:8080/HelloWorld.html
+```
+
