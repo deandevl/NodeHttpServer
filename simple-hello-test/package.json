@@ -1,9 +1,8 @@
 {
-  "name": "test",
+  "name": "simple-hello-test",
   "version": "0.1.0",
   "description": "Test NodeJS server NodeHttpServer",
   "main": "nodehttpserver.js",
-  "keywords": [],
   "author": "Rick Dean",
   "license": "MIT",
   "dependencies": {

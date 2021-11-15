@@ -9,13 +9,13 @@ Public methods from `HttpServer` include:
 - get(), post(), patch(), delete()  ---- method functions with arguments for defining route [string] and handler [function].
 - route([string] a_route)  ----  sets the current base route for the above 4 methods.
 - add_content_type([string] ext, [string] content_type)  ---- adds an additional content type that the server responds with.  The server currently recognizes `.html, .jpg, .css,  .js, .png,  .ico,  .json,  .svg,  .svgz`.
-- add_router([`Router`] router) ---- adds to the server the routes defined in the `Router` class.  See the `node_http_server.js` source for the definition of the `Router` class.
+- add_router([`Router`] router) ---- adds to the server the routes defined in the `Router` class.  See the `nodehttpserver.js` source for the definition of the `Router` class.
 
 Along with the `HttpServer` class, there are HTTP helper methods for working with Node.js' request and response objects. 
 
 Public global HTTP helper methods include `reply_response()`, `get_query_str()`, `get_query_obj()`, `find_obj()`, `send_404()`, `get_body()`, `set_cookies()`.
 
-A demonstration of `nodehttpserver` is provided in this repository. Enter the following to start the server:
+Demonstrations of `nodehttpserver` are provided in this repository. In the `simple-hello-test` folder enter the following to start the server:
 
 ```
 node startserver.js
@@ -27,3 +27,19 @@ In a browser, enter the following address to see the server's response:
 localhost:8080/HelloWorld.html
 ```
 
+A more advanced test is provided in the `advanced-test` folder.  Again, there is a `startserver.js` file to start the server.  Enter one of following addresses in a browser:
+
+```
+localhost:8080/overview.html  -------front page
+localhost:8080/tour.html -------- displays a specific tour
+127.0.0.1:8080/api/v1/tours ----to get a listing of the tours
+```
+
+Several routes are defined from this advanced server. They are easily tested by using [Postman](https://www.postman.com/).  To use Postman:
+
+- Install Postman.
+- Start Postman and import this repo's file `advanced-test\postman\Node-http-file.postman_collection.json` under Postman's file tab.  This will provide a collection of 7 url requests.
+- Start the server as outlined above.
+- Select one of the 7 requests and click the <u>Send</u> button.  Postman will display the server's response.
+
+ Udemy's excellent course [Node.js, Express, MongoDB & More: The Complete Bootcamp 2021](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/) taught by [Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtmann/) is used in the advanced test where file I/O is used in the backend instead of a MongoDB database.  This server incorporates the MongoDB database using [mongoose](https://mongoosejs.com/) and gets closer to the course with tours and users and is available [here](https://github.com/deandevl/node_http_server_mongodb).

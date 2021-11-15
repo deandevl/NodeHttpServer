@@ -1,0 +1,13 @@
+{
+  "name": "advanced-test",
+  "version": "0.1.0",
+  "description": "An advanced test of the NodeJS server nodehttpserver.js.",
+  "main": "nodehttpserver.js",
+  "author": "Rick Dean",
+  "license": "MIT",
+  "dependencies": {
+    "morgan": "latest",
+    "lodash.set": "latest",
+    "nodehttpserver": "git+https://github.com/deandevl/NodeHttpServer.git"
+  }
+}
