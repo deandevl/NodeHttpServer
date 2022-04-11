@@ -1,7 +1,6 @@
 /**
  * Created by Rick on 2021-11-14.
  */
-//const server = require('./nodehttpserver.js');
 const server = require('nodehttpserver');
 const path = require('path');
 

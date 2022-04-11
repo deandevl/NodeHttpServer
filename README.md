@@ -30,8 +30,8 @@ localhost:8080/HelloWorld.html
 A more advanced test is provided in the `advanced-test` folder.  Again, there is a `startserver.js` file to start the server.  Enter one of following addresses in a browser:
 
 ```
-localhost:8080/overview.html  -------front page
-localhost:8080/tour.html -------- displays a specific tour
+127.0.0.1:8080/overview.html  -------front page
+127.0.0.1:8080/tour.html -------- displays a specific tour
 127.0.0.1:8080/api/v1/tours ----to get a listing of the tours
 ```
 
