@@ -2,7 +2,11 @@
   "name": "nodehttpserver",
   "version": "0.1.0",
   "description": "nodehttpserver is a simple Node jS web server application",
-  "main": "nodehttpserver.js",
+  "source": "src/nodehttpserver.js",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "parcel build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deandevl/NodeHttpServer.git"
@@ -19,5 +23,8 @@
   "homepage": "https://github.com/deandevl/NodeHttpServer#readme",
   "dependencies": {
     "lodash.set": "latest"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1"
   }
 }

@@ -11,4 +11,5 @@ const httpServer = new server.HttpServer();
 httpServer.static(path.join(__dirname, 'public'));
 
 // start the server listening from the local host at port 8080
+// Client should enter: localhost:8080/HelloWorld.html
 httpServer.listen('Test');
